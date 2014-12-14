@@ -77,6 +77,6 @@ module.exports =
     options:
       animation: "swingingDoor"
 
-  # initialView:
-  #   id: "initialView"
-  #   location: "kitchensink#initial-view"
+  initialView:
+     id: "initial-view"
+     location: "kitchensink#initial"

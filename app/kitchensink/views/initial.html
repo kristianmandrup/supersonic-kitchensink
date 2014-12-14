@@ -4,10 +4,10 @@
   </super-navbar-title>
 </super-navbar>
 
-<div class="padding">
+<div class="padding" ng-controller="InitialController">
 
   <p>Please use the mock log in button below to dismiss the Initial View and initialize the rest of your app.</p>
 
-  <button onclick="supersonic.ui.initialView.dismiss()" class="button button-block button-balanced">Log in</button>
+  <button ng-click="login()" class="button button-block button-balanced">Log in</button>
 
 </div>
