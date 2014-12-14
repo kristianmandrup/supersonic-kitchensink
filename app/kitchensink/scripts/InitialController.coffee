@@ -1,6 +1,7 @@
 angular
 .module('kitchensink')
-.controller 'InitialController', ($scope, supersonic, $timeout) ->
+.controller 'InitialController', ['$scope', 'supersonic', '$timeout', '$cordovaFacebook'],
+  ($scope, supersonic, $timeout, $cordovaFacebook) ->
 
   $scope.supersonic = supersonic
 

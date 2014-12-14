@@ -47,7 +47,14 @@
     <!-- App -->
 
     <div class="item item-divider">
-      App
+      <form ng-submit="fb_feed_dialog()" ng-controller="FeedController">
+        <span  id="invalid-feed" class="notify notify-error">{{invalidFeed}}</span>
+        <input id="link" type="text" ng-model="feed.link"/>
+        <input id="source" type="text" ng-model="feed.source"/>
+        <input id="caption" type="text" ng-model="feed.caption"/>
+        <input id="description" type="text" ng-model="feed.description"/>
+        <button id="submit-feed" type="submit" class="btn btn-submit"/>
+      </form>
     </div>
 
     <div class="item item-toggle">
