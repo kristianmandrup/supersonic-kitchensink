@@ -10,4 +10,8 @@
 
   <button ng-click="login()" class="button button-block button-balanced">Log in</button>
 
+  <app-router ng-if="isBrowser">
+    <!-- matches an exact path -->
+    <app-route path="/home" import="/kitchensink/index.html"></app-route>
+  </app-router>
 </div>
